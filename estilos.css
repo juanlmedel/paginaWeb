@@ -1,0 +1,37 @@
+/*  CSS document 
+selectores en css:
+	-etiqueta <-- poner en nombre de la etiqueta ej. body, header, p, etc..
+	-id <-- utilizar el simbolo # y nombre signifcativo, aplica solo a un selector especifico. Unico elemento
+	-clase <-- presedidos de un punto. muchos elementos
+*/
+#cabeceraPrincipal{
+	background-color: #00F;
+}
+
+#navegacionPrincipal{
+	background-color: #F00;
+}
+
+#barraLateral{
+	background-color: #0F0;
+	float: left; /* romper el flujo como se colocan los elementos de la pagina web, ocupara el ancho del texto y la etiqueta que le sigue se rodeara a esta etiqueta */
+	height: 950px;
+}
+
+#contenidoPrincipal{
+	background-color: #606;	
+	margin-left: 210px; /* si hay un objeto flotando al lado del margen este no lo reconoce y el margen empieza desde donde esta el inicio del objeto flotante */
+	padding-left: 15px; /* establece separacion desde el contenido de la caja  */
+	padding-top: 15px;
+}
+
+#piePrincipal{
+	background-color: #FF0;
+	clear: both; /* decirle qque es un float asi lo rompemos y lo trabajamos de forma normal */
+	margin-top: 50px;
+}
+
+li{
+	background-color: #FF0;
+	display: inline; /* etiqueta li que es block lo muestr inline y deje uno al lado del otro y ya no ocupa el 100% de la pantalla solo ocuoara la longitud del texto en li. */		
+}

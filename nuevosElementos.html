@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		/* p[name$="os"]{ /* name="misElementos" en la etiqueta p debemos tener la etiqueta igual y se dara el estilo dicho
+		acá, name^="mis" a todos los elementos que empiecen por mis, name$="os" a todos los que terminen en os, name*="l" todos los que contengan la letra l 
+			color: #F00;
+		} */
+
+		/* p:nth-child(2){  /* pseudoclases 
+			color: :#F00;
+		} */
+
+		#principal{
+			width: 500px;
+			/*background-color: blue;*/
+			text-align: center; /*  */
+			margin:15px auto; /* se da un margen de 15px por arriba y abajo, margen automatico con auto en izquierda y derecha queda centrado en cualquier dispositivo */
+			padding: 15px; /* una sola medida aca da para los 4 lados del texto */
+			border: 3px solid red; /*  */
+			border-radius: 15px;			
+			box-shadow: #999 5px 5px 10px; /* sombra contenedor: color, desplazamiento verticar, desplazamiento horizontal, difucion de la sombra ; */
+			/*
+			background:-moz-linear-gradient(bottom, #00F, #3FF);
+			background:-webkit-linear-gradient(left, #00F, #3FF);
+			background:-ms-linear-gradient(top, #00F, #3FF);
+			background:-o-linear-gradient(top, #00F, #3FF);
+			*/
+			background:-webkit-radial-gradient(center, ellipse, red, yellow);
+			
+			/*outline: 2px dashed #00F; /* se puede aplicar a cualquier elemento es una linea puntiaguda 
+			outline-offset: 15px; */
+			/*-webkit-transform:scale(0.5); /* escala un elemento, tambien puedo invertirlo colocando una como y -1 */
+			
+		}
+		
+		@font-face{
+			font-family: 'miPropiaLetra';
+			src:url('Letras/Hauser Bold.otf');
+		}
+
+		#titulo{
+			/*font: bold 36px verdana, arial, sans-serif; /* letra primero en verrdana sino arial sino sans */
+			font:bold 36px 'miPropiaLetra';
+			text-shadow: #0F0 3px 3px 10px; /* sombra texto mismos valores al contenedor */
+			color: rgba(0, 0, 0, 0.5); /* rgba los tres primeros valores son colores y el 4 es la transparencia ala letra del color seleccionado */
+		}
+	</style>
+
+</head>
+<body>
+	
+	<!-- <p>Hola</p>
+	<p>Adios</p>
+	<p>Febrero</p>
+
+	<ol>
+		<li>Frutas</li>
+		<li>
+			<p>Manzanas</p>	
+			<p>Peras</p>		
+			<p>Cerezas</p>
+		</li>		
+	</ol>
+	
+	<p>Hasta pronto</p> -->
+
+
+	<header id="principal">
+		<span id="titulo">Estilos css3</span>
+	</header>
+	
+</body>
+</html>
